@@ -1,6 +1,8 @@
 package rt
 
-import "time"
+import (
+	"time"
+)
 
 func Task() {
 	time.Sleep(1 * time.Second)
