@@ -1,3 +1,3 @@
-module github.com/sunzhenkai/evaluate-go
+module evaluate-go
 
 go 1.15

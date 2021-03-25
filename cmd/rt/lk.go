@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	go rt.Task()
-	go rt.Task()
-	println("YES")
+	rt.TLock()
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(1 * time.Minute)
 }
