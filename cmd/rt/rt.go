@@ -10,5 +10,6 @@ func main() {
 	go rt.Task()
 	println("YES")
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(3 * time.Second)
+	println("DONE")
 }
