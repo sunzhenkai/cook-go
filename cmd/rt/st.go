@@ -1,7 +1,7 @@
 package main
 
 import (
-	"evaluate-go/pkg/st"
+	"cooking-go/pkg/st"
 	"fmt"
 )
 

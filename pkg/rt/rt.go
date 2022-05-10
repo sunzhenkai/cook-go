@@ -1,7 +1,7 @@
 package rt
 
 import (
-	"evaluate-go/pkg/tm"
+	"cooking-go/pkg/tm"
 	"fmt"
 	"time"
 )
