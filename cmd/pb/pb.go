@@ -43,4 +43,13 @@ func main() {
 	foo := pb.Foo{}
 	foo.Id = proto.Int32(23)
 	println(*foo.Id)
+
+	buf, er := proto.Marshal(&foo)
+	if er != nil {
+		println("marshal failed", er)
+	}
+	println(string(buf))
+
+	i6 := int64(1)
+	println(i6)
 }
