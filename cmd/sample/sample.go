@@ -25,7 +25,7 @@ func InitCheckLog() {
 	}
 }
 
-func main() {
+func TS() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(rand.Intn(100))
 	}
@@ -37,4 +37,23 @@ func main() {
 	fmt.Println(string(bs))
 	checkLog.Println(string(bs))
 	SampleA()
+}
+
+type FaSession struct {
+	Value int
+}
+
+type FaReq struct {
+	FaSession      FaSession
+	FaSessionPoint *FaSession
+}
+
+func Fa() {
+	req := FaReq{}
+	fmt.Printf("%v\n", req.FaSession.Value)
+	fmt.Printf("%v\n", req.FaSessionPoint == nil)
+}
+
+func main() {
+	Fa()
 }
